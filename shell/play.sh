@@ -1,4 +1,5 @@
 #!/bin/bash
 
-hello rob
+var="apple";
 
+echo $var

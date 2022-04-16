@@ -1,0 +1,32 @@
+function getUsers(callback) {
+  setTimeout(() => {
+    callback([
+      { username: "john", email: "john@test.com" },
+      { username: "jane", email: "jane@test.com" },
+    ]);
+  }, 1000);
+}
+
+function findUser(username, callback) {
+  getUsers((users) => {
+    const user = users.find((user) => user.username === username);
+    callback(user);
+  });
+}
+findUser("john", console.log);
+
+/*
+This is the callback function that gets placed as an 
+argument inside the getUsers function...
+
+    (users) => {
+        const user = users.find((user) => user.username === username);
+        callback(user);
+     }
+
+Then the array of data gets passed into this callback function
+as an argument. It gets stuffed in and replaces the 'users'
+parameter. Kapeeesh?
+Do not be confused by the callback parameter in the findUser function.
+That 'callback' parameter gets replaced by 'console.log'. Very simple.
+*/

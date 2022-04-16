@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"browser-sync": "^2.27.9",
+		"eslint": "^8.13.0"
+	}
+}

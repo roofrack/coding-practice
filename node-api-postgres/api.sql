@@ -6,3 +6,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(30)
 );
 
+/* show tables */
+SELECT * FROM pg_catalog.pg_tables;
+
+SELECT * FROM users;

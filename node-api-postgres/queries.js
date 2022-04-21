@@ -1,9 +1,11 @@
 const Pool = require("pg").Pool;
 const pool = new Pool({
+  // I dont understand this... it appears the only thing you need
+  // here is the database name.
   user: "rob",
   host: "localhost",
   database: "api",
-  // password: "rob",
+  password: "rob",
   port: 5432,
 });
 
@@ -12,7 +14,9 @@ const getUsers = (request, response) => {
     if (error) {
       throw error;
     }
-    response.status(200).json(results.rows);
+    // response.status(200).json(results.rows);
+    const data = response.status(200).json(results.rows);
+    console.log(data);
   });
 };
 

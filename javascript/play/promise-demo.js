@@ -24,7 +24,7 @@ function load(url) {
 }
 
 btn.addEventListener("click", () => {
-  load(URL)
+  load(url)
     .then((response) => {
       const result = JSON.parse(response);
       msg.innerHTML = result.message;

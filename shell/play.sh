@@ -1,5 +1,6 @@
 #!/bin/bash
 
-var="apple";
+var="apple"
 
 echo $var
+echo buppy

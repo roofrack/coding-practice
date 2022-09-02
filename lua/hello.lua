@@ -1,4 +1,6 @@
 local function sayHello()
-  print("hey bobby")
+	print("hey bobby")
 end
+
 sayHello()
+vim.cmd('print("hello")')

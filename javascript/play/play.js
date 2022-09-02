@@ -1,9 +1,5 @@
-const names = ['bobby', 'tommy', 'chillin']
+let numbers = [1, 2, 3, 4]
 
-const res = names.find(findBobby)
-
-function findBobby(item) {
-  return item === 'bobby'
-}
-
-console.log(res)
+// numbers.push(numbers.length + 1);
+console.log(numbers.length)
+console.log(numbers.length + 1)

@@ -1,8 +1,11 @@
 // Using find()
 // from mdn find
 
-const array1 = [5, 12, 8, 130, 44];
+const array1 = [5, 12, 8, 130, 44]
 
-const found = array1.find(element => element > 10);
+const foundOne = array1.find((element) => element > 10)
 
-console.log(found)
+// const foundAll = array1.filter((element) => element > 10)
+
+console.log(foundOne)
+// console.log(foundAll)
